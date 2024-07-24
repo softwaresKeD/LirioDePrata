@@ -10,8 +10,10 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #f8f8f8;
-  
+  background-color: #333;
+  border: 1px solid red;
+  width: 100%;
+  height: 500px;
 }
 
 
@@ -26,7 +28,7 @@ body {
 }
 
 header {
-  background-color: #6d8b89;
+  background-color: #fff;
   color: #fff;
   width: 100%;
   position: fixed; /* Fixa o header no topo */
@@ -49,7 +51,7 @@ header .container{
   display: flex;
   align-items: center;
   align-content: center;
-  color: #d5e0b5;
+  color: #333;
   gap: 20px;
 }
 
@@ -71,15 +73,162 @@ header .container{
 }
 
 .botoes-pagina button{
-  color: #d5e0b5;
+  color: #333;
   border: 0px;
   border-radius: 0px;
 }
 
 .botoes-pagina button:hover{
-  color: #a5c3a7;
+  color: #F0DDA6;
   transform: scale(1.19);
   text-decoration: underline;
-  text-decoration-color: #a5c3a7;
+  text-decoration-color: #F0DDA6;
   text-decoration-thickness: 5px;
+}
+
+/*Aqui começa a parte do conteúdo principal da página*/
+.conteudo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.titleSection{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color:#54b8b1;
+  font-size: 30px;
+}
+
+.subtitleSection{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color:#54b8b1;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+
+/*Apresentação pessoal*/
+
+.sobreMim{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(20px); 
+  transition: opacity 0.4s ease, transform 0.4s ease; 
+  animation-delay: 1s;
+}
+
+.image-text-container {
+  margin: 10px auto; /* Centraliza a div */
+  text-align: justify;
+}
+
+.texto_contato {
+  padding-top: 40px auto;
+  margin: 30px auto; /* Centraliza a div */
+  text-align: justify;
+  width: 90%;
+}
+
+.float-image-left {
+  float: left; /* Faz a imagem flutuar à esquerda */
+  margin-right: 20px; /* Espaço entre a imagem e o texto */
+  width: 150px; /* Largura da imagem, ajuste conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.image-text-container::after {
+  content: "";
+  display: table;
+  clear: both; /* Limpa o float para evitar problemas de layout */
+}
+
+.social_medias{
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.social_medias i{
+  color: #3a3838;
+}
+
+/*Pesquisa*/
+
+.float-image-right {
+  float: right; /* Faz a imagem flutuar à esquerda */
+  margin-right: 20px; /* Espaço entre a imagem e o texto */
+  width: 150px; /* Largura da imagem, ajuste conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  margin: 20px;
+  border-radius: 10px;
+}
+
+
+
+.pesquisa{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(20px); 
+  transition: opacity 0.4s ease, transform 0.4s ease; 
+  animation-delay: 1.2s;
+}
+.publicacões{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(20px); 
+  transition: opacity 0.4s ease, transform 0.4s ease; 
+  animation-delay: 1.2s;
+}
+
+.ensino{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(20px); 
+  transition: opacity 0.4s ease, transform 0.4s ease; 
+  animation-delay: 1.2s;
+}
+
+footer {
+  background-color: #6d8b89;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Animação */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.sobreMim, .pesquisa {
+  animation: fadeInUp 1s ease forwards;
 }
