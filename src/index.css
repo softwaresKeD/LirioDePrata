@@ -10,7 +10,6 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #333;
   border: 1px solid red;
   width: 100%;
   height: 500px;
@@ -19,12 +18,14 @@ body {
 
 .container {
   padding: 15px 0;
+  background-color: blue;
 }
 
 /*Aqui começa a parte do header da página*/
 
 .cabecalho{
   height: 93px;
+  
 }
 
 header {
