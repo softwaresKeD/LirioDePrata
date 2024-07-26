@@ -43,7 +43,7 @@ function Header() {
 
                         <div className="botoes-pagina">
                             <div className="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                <button onClick={() => scrollToSection('sobreMim')} type="button" className="btn btn-outline">Sobre mim</button>
+                                <button onClick={() => scrollToSection('sobreMim')} type="button" className="btn btn-outline">Home</button>
                                 <button onClick={() => scrollToSection('pesquisa')} type="button" className="btn btn-outline">Pesquisa</button>
                                 <button onClick={() => scrollToSection('publicacões')} type="button" className="btn btn-outline">Publicações</button>
                                 <button onClick={() => scrollToSection('ensino')} type="button" className="btn btn-outline">Ensino</button>
