@@ -10,14 +10,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
-  background-color: #333;
+  color: #dbd7d6;
+  background-color: #dbd7d6;
 }
 
 
 .container {
-  padding: 15px 0 0 0;
-  background-color: #fff;
+  padding: 15px 0 24px 0;
+  background-color: #dbd7d6;
 }
 
 /*Aqui começa a parte do header da página*/
@@ -28,8 +28,8 @@ body {
 }
 
 header {
-  background-color: #fff;
-  color: #fff;
+  background-color: #dbd7d6;
+  color: #dbd7d6;
   width: 100%;
   position: fixed; /* Fixa o header no topo */
   opacity: 1; /* Opacidade inicial */
@@ -96,6 +96,14 @@ header .container{
   width: 100vw;  /* Largura da viewport */
   overflow: hidden;
 }
+.conteiner_sobre{
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  width: 522px;
+  height: 255px;
+  top: 201px; /* Move o elemento 20px para baixo */
+  left: 110px; /* Move o elemento 30px para a direita */
+}
 .intro {
   position: relative;
   top: 190px; /* Move o elemento 20px para baixo */
@@ -106,14 +114,24 @@ header .container{
 .p_intro{
   color: #F0DDA6 ;
 }
+.p_sobre{
+  color: #F0DDA6 ;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+  height: 100%;
+  
+
+}
 .h_intro{
   color: #EB6427;
 }
-
+.sobre_title{
+  color: #9ED99E;
+}
 
 .seta {
   position: relative;
-  top: 350px;
+  top: 390px;
   left: 680px;
   padding: 0px 0px;
   border: none;
@@ -136,7 +154,11 @@ header .container{
 .fundo_menu{
   width: 50vw;
   height: 100vh;
-  background-color: #333;
+  background-image: url('../src/assets/batata.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
   
 }
 
@@ -152,7 +174,7 @@ header .container{
       transform: translateY(0);
   }
 }
-.p_intro, .h_intro, .seta {
+.p_intro, .h_intro, .seta, .sobre_title, .p_sobre  {
   animation: fadeInUp 1s ease forwards;
   }
   
