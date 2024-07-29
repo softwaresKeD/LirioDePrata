@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import './index.css';
+import { Navbar, Nav, Container, Button  } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Header() {
     const UrlHead = "./src/assets/logo.png";
+
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+    const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
 
     const scrollToSection = (sectionId) => {
         const targetSection = document.getElementById(sectionId);
@@ -13,47 +19,47 @@ function Header() {
     };
 
     const [scrolled, setScrolled] = useState(false);
+    const [show, setShow] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 0) {
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
-        };
+    const handleClose = () => {
+        console.log('Closing Offcanvas');
+        setShow(false)
+    };
+    const handleShow = () => setShow(true);
 
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
+    
     return (
-        <div>
-            <div className="cabecalho">
-                <header className={`Header ${scrolled ? 'scrolled' : ''}`}>
-                    <div className="container">
-                        <div className="apresentacao">
-                            <div className="logo">
-                                <img style={{ width: '100px' }} src={UrlHead} alt="Logo" />
-                            </div>
-                        </div>
-
-                        <div className="botoes-pagina">
-                            <div className="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                <button onClick={() => scrollToSection('home')} type="button" className="btn btn-outline">Home</button>
-                                <button onClick={() => scrollToSection('sobre_mim')} type="button" className="btn btn-outline">Sobre</button>
-                                <button onClick={() => scrollToSection('cardapio')} type="button" className="btn btn-outline">cardapio</button>
-                                <button onClick={() => scrollToSection('contato')} type="button" className="btn btn-outline">Contato</button>
-                            </div>
-                        </div>
-
-                    </div>
-                </header>
+        <header className={`header ${scrolled ? 'scrolled' : ''}`}>
+            <Container className="custom-container">
+                <Navbar expand="lg">
+                    <Navbar.Brand href="#">
+                        <img style={{ width: '100px' }} src={UrlHead} alt="Logo" />
+                    </Navbar.Brand>
+                    <Button className="navbar-toggler" onClick={toggleSidebar}>
+                        <span className="navbar-toggler-icon"></span>
+                    </Button>
+                    <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
+                        <Nav>
+                            <Nav.Link onClick={() => scrollToSection('home')}>HOME</Nav.Link>
+                            <Nav.Link onClick={() => scrollToSection('sobre_mim')}>SOBRE</Nav.Link>
+                            <Nav.Link onClick={() => scrollToSection('cardapio')}>CARDÁPIO</Nav.Link>
+                            <Nav.Link onClick={() => scrollToSection('contato')}>CONTATO</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                    <div className="ghost-div" />
+                </Navbar>
+            </Container>
+            
+            <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
+                <Button className="close-btn" onClick={toggleSidebar}>×</Button>
+                <Nav className="flex-column">
+                    <Nav.Link onClick={() => { scrollToSection('home'); toggleSidebar(); }}>HOME</Nav.Link>
+                    <Nav.Link onClick={() => { scrollToSection('sobre_mim'); toggleSidebar(); }}>SOBRE</Nav.Link>
+                    <Nav.Link onClick={() => { scrollToSection('cardapio'); toggleSidebar(); }}>CARDÁPIO</Nav.Link>
+                    <Nav.Link onClick={() => { scrollToSection('contato'); toggleSidebar(); }}>CONTATO</Nav.Link>
+                </Nav>
             </div>
-        </div>
+        </header>
     );
 }
 
