@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import './index.css';
+import './Header.css';
 import { Navbar, Nav, Container, Button  } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Header() {
-    const UrlHead = "./src/assets/logo.png";
+    const UrlHead = "./src/assets/imagens/logo.png";
 
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -37,7 +37,7 @@ function Header() {
     }, []);
     
     return (
-        <header className={`header ${scrolled ? 'scrolled' : ''}`}>
+        <header className={`header`}>
             <Container className="custom-container">
                 <Navbar expand="lg">
                     <Navbar.Brand href="#">

@@ -1,4 +1,6 @@
-/* Paleta usada : 
+/* Paleta usada :
+#59143A (Roxo do header)
+#F2994B (amarelo da letra do header)
 #EB6427 (Laranja)
 #F0DDA6 (Dourado)
 #EB214E (Rosa)
@@ -11,125 +13,16 @@ body {
   margin: 0;
   padding: 0;
   color: #dbd7d6;
-  background-color: #dbd7d6;
+  background-color: #F2F2F2;
 }
-
 
 .container {
   padding: 15px 0 24px 0;
-  background-color: #dbd7d6;
-}
-
-/*Aqui começa a parte do header da página*/
-
-.custom-container {
-  height: 90px;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   background-color: #59143A;
 }
 
-
-header {
-  background-color: #59143A;
-  height: 90px;
-  width: 100%;
-  position: fixed; /* Fixa o header no topo */
-  opacity: 1; /* Opacidade inicial */
-  transition: opacity 0.3s ease; /* Transição suave para a opacidade */
-  z-index: 1000;
-  font-family: 'Brush Script MT', cursive;
-  font-size: 1.2em;
-}
-
-header.scrolled {
-  opacity: 0.4;
-}
-
-.navbar {
-  padding: 0;
-  width: 100%;
-  gap: 100px;
-}
-
-.navbar-brand {
-  margin-right: 0;
-}
-
-.navbar-nav {
-  flex-grow: 1;
-  justify-content: center;
-  row-gap: 20px;
-}
-
-.nav-link {
-  color: #F2994B !important;
-  border: 0px;
-  border-radius: 0px;
-}
-
-.nav-link:hover {
-  color: #F2994B !important;
-  transform: scale(1.19);
-  text-decoration: underline;
-  text-decoration-color: white;
-  text-decoration-thickness: 2px;
-}
-
-.ghost-div {
-  width: 100px;
-}
-
-@media (max-width: 992px) {
-  .ghost-div {
-    display: none;
-  }
-}
-
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #59143A;
-  overflow-x: hidden;
-  transition: 0.3s;
+.Conteudo{
   padding-top: 90px;
-}
-
-.sidebar.open {
-  width: 250px; /* Width of the sidebar */
-  z-index: 1001;
-  display: block;
-}
-
-.sidebar .flex-column{
-  position: absolute;
-  top: 60px;
-  left: 10px;
-}
-
-.sidebar .close-btn {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 40px;
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-}
-
-.sidebar .nav-link {
-  color: white !important;
-  text-align: left;
-}
-
-.sidebar .nav-link:hover {
-  color: white !important;
 }
 
 /*Aqui começa a parte do conteúdo principal da página*/

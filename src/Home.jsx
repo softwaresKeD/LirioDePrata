@@ -1,4 +1,5 @@
-import arrow from '../src/assets/ad.png'
+import arrow from '../src/assets/imagens/ad.png'
+
 function Home(){
     return(
         <>
