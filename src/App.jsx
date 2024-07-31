@@ -14,15 +14,13 @@ function App() {
 
   return (
     <>
-      <div className='HeaderClass'>
         <Header />
-      </div>
       
 
       <main className='Conteudo'>
         <Carrocel images={imagensHome} />
-        <Sobre />
-        <Home />
+        {/* <Sobre /> */}
+        {/* <Home /> */}
       </main>
       
 

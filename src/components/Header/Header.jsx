@@ -38,25 +38,23 @@ function Header() {
     
     return (
         <header className={`header`}>
-            <Container className="custom-container">
-                <Navbar expand="lg">
-                    <Navbar.Brand href="#">
-                        <img style={{ width: '100px' }} src={UrlHead} alt="Logo" />
-                    </Navbar.Brand>
-                    <Button className="navbar-toggler" onClick={toggleSidebar}>
-                        <span className="navbar-toggler-icon"></span>
-                    </Button>
-                    <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
-                        <Nav>
-                            <Nav.Link onClick={() => scrollToSection('home')}>HOME</Nav.Link>
-                            <Nav.Link onClick={() => scrollToSection('sobre_mim')}>SOBRE</Nav.Link>
-                            <Nav.Link onClick={() => scrollToSection('cardapio')}>CARDÁPIO</Nav.Link>
-                            <Nav.Link onClick={() => scrollToSection('contato')}>CONTATO</Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                    <div className="ghost-div" />
-                </Navbar>
-            </Container>
+            <Navbar expand="md">
+                <Navbar.Brand href="#">
+                    <img style={{ width: '100px' }} src={UrlHead} alt="Logo" />
+                </Navbar.Brand>
+                <Button className="navbar-toggler" onClick={toggleSidebar}>
+                    <span className="navbar-toggler-icon"></span>
+                </Button>
+                <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
+                    <Nav>
+                        <Nav.Link onClick={() => scrollToSection('home')}>HOME</Nav.Link>
+                        <Nav.Link onClick={() => scrollToSection('sobre_mim')}>SOBRE</Nav.Link>
+                        <Nav.Link onClick={() => scrollToSection('cardapio')}>CARDÁPIO</Nav.Link>
+                        <Nav.Link onClick={() => scrollToSection('contato')}>CONTATO</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+                <div className="ghost-div" />
+            </Navbar>
             
             <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
                 <Button className="close-btn" onClick={toggleSidebar}>×</Button>
