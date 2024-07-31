@@ -1,0 +1,13 @@
+.conteudo-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    color: white;
+    font-size: 2em;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-color: #F2994B;
+    text-decoration-thickness: 5px;
+    background-color: hsl(327, 63%, 21%);
+}
