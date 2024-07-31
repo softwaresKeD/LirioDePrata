@@ -8,8 +8,13 @@
 #F5F5DC (Bege claro)
 */
 
+#root {
+  width: 100%;
+}
+
 body {
   font-family: Arial, sans-serif;
+  width: 100%;
   margin: 0;
   padding: 0;
   color: #dbd7d6;
@@ -21,13 +26,19 @@ body {
   background-color: #59143A;
 }
 
+.HeaderClass{
+  width: 100% !important;
+}
+
 .Conteudo{
   padding-top: 90px;
+  width: 100%;
+  border: 1px solid red;
 }
 
 /*Aqui começa a parte do conteúdo principal da página*/
 .home {
-  background-image: url('../src/assets/b1.jpg');
+  background-image: url('./assets/b1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -93,7 +104,7 @@ body {
 .fundo_menu{
   width: 50vw;
   height: 100vh;
-  background-image: url('../src/assets/batata.jpg');
+  background-image: url('./assets/batata.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

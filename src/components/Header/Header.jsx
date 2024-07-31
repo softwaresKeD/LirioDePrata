@@ -4,7 +4,7 @@ import { Navbar, Nav, Container, Button  } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Header() {
-    const UrlHead = "./src/assets/imagens/logo.png";
+    const UrlHead = "./assets/imagens/logo.png";
 
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 

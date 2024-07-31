@@ -8,6 +8,18 @@
 #F5F5DC (Bege claro)
 */
 
+header {
+  background-color: #59143A;
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 1.2em;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .custom-container {
   height: 90px;
   width: 100%;
@@ -15,25 +27,6 @@
   justify-content: space-around;
   align-items: center;
   background-color: #59143A;
-}
-
-
-header {
-  background-color: #59143A;
-  height: 90px;
-  width: 100%;
-  position: fixed;
-  opacity: 1;
-  /* Opacidade inicial */
-  transition: opacity 0.3s ease;
-  /* Transição suave para a opacidade */
-  z-index: 1000;
-  font-family: 'Brush Script MT', cursive;
-  font-size: 1.2em;
-}
-
-header.scrolled {
-  opacity: 0.4;
 }
 
 .navbar {
