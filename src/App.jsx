@@ -9,6 +9,7 @@ import Sobre from './components/Sobre/Sobre';
 import Footer from './components/Footer/Footer'
 
 import imagensData from './data/imagens.json';
+import Contato from './components/Contato/Contato';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         
         {/* Contato */}
         <Sobre />
+        <Contato />
 
         {/* Footer */}
         <Footer/>

@@ -122,6 +122,62 @@ body {
 
 }
 
+/* Contato  */
+
+.contato{
+  
+  height: 100vh;
+  /* Altura da viewport */
+  width: 70vw;
+  /* Largura da viewport */
+}
+#localizer1{
+  height: 100vh;
+  /* Altura da viewport */
+  width: 70vw;
+  /* Largura da viewport */
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  
+  top: 50px;
+  /* Move o elemento 20px para baixo */
+  left: 80px;
+}
+#localizer2{
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  top: 50px;
+  /* Move o elemento 20px para baixo */
+  left: 30px;
+  height: 100vh;
+  /* Altura da viewport */
+  width: 30vw;
+  /* Largura da viewport */
+}
+.ctt{
+  display: flex;
+  background-color: black;
+}
+.dados_local{
+  height: 100vh;
+  /* Altura da viewport */
+  width: 30vw;
+  /* Largura da viewport */
+  
+}
+.p_form{
+  color: white;
+}
+.titulo_contato{
+  color: white;
+}
+input{
+  background-color: #59143A;
+}
+textarea{
+  background-color: #59143A;
+}
+
 
 /* Animação */
 @keyframes fadeInUp {
