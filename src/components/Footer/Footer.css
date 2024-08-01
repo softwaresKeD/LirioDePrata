@@ -13,15 +13,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
 }
 
 .footer-logo {
     width: 100px;
+    align-items: center;
 }
 
 .footer-center {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .footer-icon {
@@ -32,10 +35,20 @@
 
 .footer-icon:hover {
     color: #F2994B; /* Amarelo */
+
 }
 
-.footer-right {
-    font-size: 0.9em;
+.footer-right{
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.kd-name{
+    color: black;
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: 'Andale Mono', monospace;
 }
 
 @media (max-width: 768px) {

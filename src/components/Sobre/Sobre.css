@@ -1,0 +1,64 @@
+.conteiner_sobre {
+    position: relative;
+    padding: 0px 0px 0px 0px;
+    width: 522px;
+    height: 255px;
+    top: 201px;
+    /* Move o elemento 20px para baixo */
+    left: 110px;
+    /* Move o elemento 30px para a direita */
+}
+
+.p_sobre {
+    color: #F0DDA6;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.sobre_title {
+    color: #9ED99E;
+}
+
+.sobre {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.fundo_menu {
+    width: 50vw;
+    height: 100vh;
+    background-image: url('./assets/imagens/batata.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.fundo_cor {
+    background-color: #EB214E;
+    height: 100vh;
+    /* Altura da viewport */
+    width: 50vw;
+    /* Largura da viewport */
+}
+
+.seta {
+    position: relative;
+    top: 390px;
+    left: 680px;
+    padding: 0px 0px;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+.p_intro,
+.h_intro,
+.seta,
+.sobre_title,
+.p_sobre {
+    animation: fadeInUp 1s ease forwards;
+}

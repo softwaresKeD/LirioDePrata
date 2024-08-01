@@ -8,176 +8,21 @@
 #F5F5DC (Bege claro)
 */
 
-#root {
-  width: 100%;
-}
-
-body {
+html, body, #root {
+  height: 100%;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
 }
 
-.container {
-  padding: 15px 0 24px 0;
-  background-color: #59143A;
-}
-
-.HeaderClass {
-  width: 100% !important;
-}
-
-.Conteudo {
-  width: 100%;
-}
-
-/*Aqui começa a parte do conteúdo principal da página*/
-.home {
-  background-image: url('./assets/imagens/batata.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  /* Altura da viewport */
-  width: 100vw;
-  /* Largura da viewport */
-  overflow: hidden;
-}
-
-.conteiner_sobre {
-  position: relative;
-  padding: 0px 0px 0px 0px;
-  width: 522px;
-  height: 255px;
-  top: 201px;
-  /* Move o elemento 20px para baixo */
-  left: 110px;
-  /* Move o elemento 30px para a direita */
-}
-
-.intro {
-  position: relative;
-  top: 190px;
-  /* Move o elemento 20px para baixo */
-  left: 191px;
-  /* Move o elemento 30px para a direita */
-  width: 500px;
-}
-
-.p_intro {
-  color: #F0DDA6;
-}
-
-.p_sobre {
-  color: #F0DDA6;
-  padding: 0px 0px 0px 0px;
-  width: 100%;
-  height: 100%;
-
-
-}
-
-.h_intro {
-  color: #EB6427;
-}
-
-.sobre_title {
-  color: #9ED99E;
-}
-
-.seta {
-  position: relative;
-  top: 390px;
-  left: 680px;
-  padding: 0px 0px;
-  border: none;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-}
-
-.sobre {
-  width: 100vw;
-  height: 100vh;
+.app {
   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.fundo_cor {
-  background-color: #EB214E;
-  height: 100vh;
-  /* Altura da viewport */
-  width: 50vw;
-  /* Largura da viewport */
-
+.main-content {
+  flex: 1;
 }
-
-.fundo_menu {
-  width: 50vw;
-  height: 100vh;
-  background-image: url('./assets/imagens/batata.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-
-}
-
-/* Contato  */
-
-.contato{
-  
-  height: 100vh;
-  /* Altura da viewport */
-  width: 70vw;
-  /* Largura da viewport */
-}
-#localizer1{
-  height: 100vh;
-  /* Altura da viewport */
-  width: 70vw;
-  /* Largura da viewport */
-  position: relative;
-  padding: 0px 0px 0px 0px;
-  
-  top: 50px;
-  /* Move o elemento 20px para baixo */
-  left: 80px;
-}
-#localizer2{
-  position: relative;
-  padding: 0px 0px 0px 0px;
-  top: 50px;
-  /* Move o elemento 20px para baixo */
-  left: 30px;
-  height: 100vh;
-  /* Altura da viewport */
-  width: 30vw;
-  /* Largura da viewport */
-}
-.ctt{
-  display: flex;
-  background-color: black;
-}
-.dados_local{
-  height: 100vh;
-  /* Altura da viewport */
-  width: 30vw;
-  /* Largura da viewport */
-  
-}
-.p_form{
-  color: white;
-}
-.titulo_contato{
-  color: white;
-}
-input{
-  background-color: #59143A;
-}
-textarea{
-  background-color: #59143A;
-}
-
 
 /* Animação */
 @keyframes fadeInUp {
@@ -190,12 +35,4 @@ textarea{
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.p_intro,
-.h_intro,
-.seta,
-.sobre_title,
-.p_sobre {
-  animation: fadeInUp 1s ease forwards;
 }

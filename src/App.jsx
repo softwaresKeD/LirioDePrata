@@ -1,46 +1,28 @@
-import { useState } from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import { Route, Routes, Navigate  } from 'react-router-dom';
+
+import './index.css'
 
 import Header from './components/Header/Header'
-import Carrocel from './components/Carrocel/Carrocel';
-import TituloSecao from './components/TituloSecao/TituloSecao'
-import Home from './components/Home/Home'
-import Sobre from './components/Sobre/Sobre';
 import Footer from './components/Footer/Footer'
-
-import imagensData from './data/imagens.json';
-import Contato from './components/Contato/Contato';
-
+import Home from './pages/Home/Home';
+import Cardapio from './pages/Cardapio/Cardapio';
 
 function App() {
-  const imagensHome = imagensData.home_superior;
-
   return (
-    <>
-        <Header />
-      
+    <div className='app'>
+      <Header />
+      <div className='main-content'>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/cardapio" element={<Cardapio />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </div>
 
-      <main className='Conteudo'>
-        <Carrocel images={imagensHome} />
-        
-        {/* Sobre Nós */}
-        <Sobre />
-
-        {/* Colocar mais um carrocel aqui com outras imagens */}
-        <Carrocel images={imagensHome} />
-        
-        {/* Contato */}
-        <Sobre />
-        <Contato />
-
-        {/* Footer */}
-        <Footer/>
-      </main>
-      
-
-
-    </>
-  )
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;

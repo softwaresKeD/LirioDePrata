@@ -23,7 +23,7 @@ function Footer() {
                     </a>
                 </div>
                 <div className="footer-right">
-                    <p>Todos os direitos reservados K&D</p>
+                    <span>managed by <span className='kd-name'>K&D</span></span>
                 </div>
             </div>
         </footer>
