@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
-import { Navbar, Nav, Container, Button  } from 'react-bootstrap';
+import { Navbar, Nav, Container, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Header() {
@@ -35,34 +36,34 @@ function Header() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-    
+
     return (
         <header className={`header`}>
             <Navbar expand="md">
                 <Navbar.Brand href="#">
                     <img style={{ width: '100px' }} src={UrlHead} alt="Logo" />
                 </Navbar.Brand>
-                <Button className="navbar-toggler" onClick={toggleSidebar}>
+                <Button className="navbar-toggler button-toggle" onClick={toggleSidebar}>
                     <span className="navbar-toggler-icon"></span>
                 </Button>
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
                     <Nav>
-                        <Nav.Link onClick={() => scrollToSection('home')}>HOME</Nav.Link>
-                        <Nav.Link onClick={() => scrollToSection('sobre_mim')}>SOBRE</Nav.Link>
-                        <Nav.Link onClick={() => scrollToSection('cardapio')}>CARDÁPIO</Nav.Link>
-                        <Nav.Link onClick={() => scrollToSection('contato')}>CONTATO</Nav.Link>
+                        <Link to="/" onClick={() => scrollToSection('contato')} className="nav-link">HOME</Link>
+                        <Link to="/" onClick={() => scrollToSection('contato')} className="nav-link">SOBRE</Link>
+                        <Link to="/cardapio" className="nav-link">CARDÁPIO</Link>
+                        <Link to="/" onClick={() => scrollToSection('contato')} className="nav-link">CONTATO</Link>
                     </Nav>
                 </Navbar.Collapse>
                 <div className="ghost-div" />
             </Navbar>
-            
+
             <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
                 <Button className="close-btn" onClick={toggleSidebar}>×</Button>
                 <Nav className="flex-column">
-                    <Nav.Link onClick={() => { scrollToSection('home'); toggleSidebar(); }}>HOME</Nav.Link>
-                    <Nav.Link onClick={() => { scrollToSection('sobre_mim'); toggleSidebar(); }}>SOBRE</Nav.Link>
-                    <Nav.Link onClick={() => { scrollToSection('cardapio'); toggleSidebar(); }}>CARDÁPIO</Nav.Link>
-                    <Nav.Link onClick={() => { scrollToSection('contato'); toggleSidebar(); }}>CONTATO</Nav.Link>
+                    <Link to="/" onClick={() => scrollToSection('contato')} className="nav-link">HOME</Link>
+                    <Link to="/" onClick={() => scrollToSection('contato')} className="nav-link">SOBRE</Link>
+                    <Link to="/cardapio" className="nav-link">CARDÁPIO</Link>
+                    <Link to="/" onClick={() => scrollToSection('contato')} className="nav-link">CONTATO</Link>
                 </Nav>
             </div>
         </header>

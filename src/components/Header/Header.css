@@ -34,6 +34,12 @@
   margin-right: 0;
 }
 
+.button-toggle .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=UTF8,%3csvg xmlns%3d%27http%3a//www.w3.org/2000/svg%27 viewBox%3d%270 0 30 30%27%3e%3cpath stroke%3d%27%23ffffff%27 stroke-width%3d%272%27 stroke-linecap%3d%27round%27 stroke-miterlimit%3d%2710%27 d%3d%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e') !important; /* Ícone branco */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 .navbar-nav {
   flex-grow: 1;
   justify-content: center;

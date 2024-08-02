@@ -1,0 +1,16 @@
+.categorias{
+    display: flex;
+    justify-content: center;
+}
+
+.categorias-listagem{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    margin: 20px;
+}
+
+.produtos{
+    display: flex;
+}

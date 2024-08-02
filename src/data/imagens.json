@@ -18,5 +18,31 @@
             "label": "Atendimento Excepcional",
             "text": "Nosso compromisso é proporcionar um atendimento caloroso e personalizado para cada cliente."
         }
+    ],
+    "cardapio_superior": [
+        {
+            "src": "assets/imagens/Cardapio1.jpg",
+            "alt": "First slide",
+            "label": "MELHORES ASSADOS",
+            "text": ""
+        },
+        {
+            "src": "assets/imagens/Cardapio2.jpg",
+            "alt": "First slide",
+            "label": "DOCES DELICIOSOS",
+            "text": ""
+        },
+        {
+            "src": "assets/imagens/Cardapio3.jpg",
+            "alt": "First slide",
+            "label": "DIVERSOS SALGADOS",
+            "text": ""
+        },
+        {
+            "src": "assets/imagens/Cardapio4.jpg",
+            "alt": "First slide",
+            "label": "MELHORES BOLOS",
+            "text": ""
+        }
     ]
 }

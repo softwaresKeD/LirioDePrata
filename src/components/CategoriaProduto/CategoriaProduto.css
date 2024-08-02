@@ -1,0 +1,21 @@
+.box-categoria{
+    padding: 10px 30px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 1.3em;
+    color: white;
+    display: inline-flex;
+    white-space: normal;
+    z-index: 1;
+}
+
+.box-categoria:hover{
+    transform: scale(1.10);
+}
+
+.box-categoria span{
+    color: white;
+    z-index: 2;
+}
