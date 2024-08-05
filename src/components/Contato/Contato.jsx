@@ -58,7 +58,7 @@ function Contato() {
                                         <label htmlFor="nome" className="p_form"></label>
                                     </div>
                                     <div className="form-group">
-                                        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" value={formData.telefone} onChange={handleChange} required />
+                                        <input className='input' type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" value={formData.telefone} onChange={handleChange} required />
                                         <label htmlFor="telefone" className="p_form"></label>
                                     </div>
                                     <div className="form-group">

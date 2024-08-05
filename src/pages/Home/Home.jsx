@@ -8,22 +8,20 @@ import imagensData from '../../data/imagens.json';
 import Contato from '../../components/Contato/Contato';
 
 function Home() {
-  const imagensHome = imagensData.home_superior;
+  const imagensHome1 = imagensData.home_superior;
 
   return (
     <>
 
       <main className='Conteudo'>
-        <Carrocel images={imagensHome} />
+        <Carrocel images={imagensHome1} />
 
         {/* Sobre Nós */}
         <Sobre />
 
         {/* Colocar mais um carrocel aqui com outras imagens */}
-        <Carrocel images={imagensHome} />
-
-        {/* Contato */}
-        <Sobre />
+        <Carrocel images={imagensHome1} />
+        
         <Contato />
 
       </main>
