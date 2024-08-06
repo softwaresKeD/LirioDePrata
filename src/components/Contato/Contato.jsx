@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import './Contato.css'
+import './Contato.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Contato() {
     const [formData, setFormData] = useState({
@@ -44,44 +45,41 @@ function Contato() {
     };
 
     return (
-        <>
-            <div className="ctt">
-                <div className="contato">
-                    <div id="localizer1">
-                        <h1 className="titulo_contato">Faça uma encomenda conosco.</h1>
-                        <p className="p_form">Pães, bolos e sobremesas deliciosas disponíveis para você a todo momento do dia. Solicite um orçamento:</p>
-                        <div className="form-container">
-                            <form onSubmit={handleSubmit}>
-                                <fieldset>
-                                    <div className="form-group">
-                                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" value={formData.nome} onChange={handleChange} required />
-                                        <label htmlFor="nome" className="p_form"></label>
+        <div className="ctt">
+            <div className="contato">
+                <div id="localizer1">
+                    <h1 className="titulo_contato">Faça uma encomenda conosco.</h1>
+                    <p className="p_form">Pães, bolos e sobremesas deliciosas disponíveis para você a todo momento do dia. Solicite um orçamento:</p>
+                    <div className="form-container">
+                        <form onSubmit={handleSubmit}>
+                            <fieldset>
+                                <div className="form-group">
+                                    <input type="text" id="nome" name="nome" className="form-control" placeholder="Digite seu nome" value={formData.nome} onChange={handleChange} required />
+                                </div>
+                                <div className="form-group">
+                                    <input className='form-control' type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" value={formData.telefone} onChange={handleChange} required />
+                                </div>
+                                <div className="form-group">
+                                    <input type="email" id="email" name="email" className="form-control" placeholder="Digite seu e-mail" value={formData.email} onChange={handleChange} required />
+                                </div>
+                                <div className="form-checkbox-group">
+                                    <label className="p_form">O que deseja?</label>
+                                    <div>
+                                        <label><input type="checkbox" name="desejo" value="sobremesa" onChange={handleChange} /> Sobremesa</label>
                                     </div>
-                                    <div className="form-group">
-                                        <input className='input' type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" value={formData.telefone} onChange={handleChange} required />
-                                        <label htmlFor="telefone" className="p_form"></label>
+                                    <div>
+                                        <label><input type="checkbox" name="desejo" value="bolo" onChange={handleChange} /> Bolo</label>
                                     </div>
-                                    <div className="form-group">
-                                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" value={formData.email} onChange={handleChange} required />
-                                        <label htmlFor="email" className="p_form"></label>
+                                    <div>
+                                        <label><input type="checkbox" name="desejo" value="pao" onChange={handleChange} /> Pão</label>
                                     </div>
-                                    <div className="form-checkbox-group">
-                                        <label className="p_form"><br /><br />O que deseja?</label>
-                                        <br />
-                                        <label className="p_form"><input type="checkbox" name="desejo" value="sobremesa" onChange={handleChange} />Sobremesa</label>
-                                        <br />
-                                        <label className="p_form"><input type="checkbox" name="desejo" value="bolo" onChange={handleChange} />Bolo</label>
-                                        <br />
-                                        <label className="p_form"><input type="checkbox" name="desejo" value="pao" onChange={handleChange} />Pão</label>
-                                    </div>
-                                    <div className="form-group">
-                                        <br />
-                                        <textarea id="pedido" name="pedido" rows="4" placeholder="Nos diga com detalhes o que deseja pedir" value={formData.pedido} onChange={handleChange} required></textarea>
-                                    </div>
-                                    <button type="submit">Enviar</button>
-                                </fieldset>
-                            </form>
-                        </div>
+                                </div>
+                                <div className="form-group">
+                                    <textarea id="pedido" name="pedido" className="form-control" rows="4" placeholder="Nos diga com detalhes o que deseja pedir" value={formData.pedido} onChange={handleChange} required></textarea>
+                                </div>
+                                <button type="submit" className="btn btn-primary">Enviar</button>
+                            </fieldset>
+                        </form>
                     </div>
                 </div>
                 <div id="localizer2">
@@ -92,12 +90,12 @@ function Contato() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
-// Baixar dependências do email js
-
 export default Contato;
+
+
 
 
