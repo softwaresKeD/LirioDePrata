@@ -38,7 +38,7 @@ function Header() {
     }, []);
 
     return (
-        <header className={`header`}>
+        <header className="header">
             <Navbar expand="md">
                 <Navbar.Brand href="#">
                     <img style={{ width: '100px' }} src={UrlHead} alt="Logo" />
