@@ -1,34 +1,4 @@
-.contato{
-  
-  height: 100vh;
-  /* Altura da viewport */
-  width: 70vw;
-  /* Largura da viewport */
-}
-#localizer1{
-  height: 100vh;
-  /* Altura da viewport */
-  width: 70vw;
-  /* Largura da viewport */
-  position: relative;
-  padding: 0px 0px 0px 0px;
-  
-  top: 70px;
-  /* Move o elemento 20px para baixo */
-  left: 80px;
-}
-#localizer2{
-  position: relative;
-  padding: 0px 0px 0px 0px;
-  top: 70px;
-  /* Move o elemento 20px para baixo */
-  left: 30px;
-  height: 100vh;
-  /* Altura da viewport */
-  width: 30vw;
-  /* Largura da viewport */
-}
-.ctt{
+.ctt {
   display: flex;
   background-image: url('./assets/imagens/paes2.jpg');
   background-size: cover;
@@ -36,31 +6,111 @@
   background-repeat: no-repeat;
   overflow: hidden;
   height: 100vh;
-  /* Altura da viewport */
   width: 100vw;
-  /* Largura da viewport */
-  
 }
-.dados_local{
-  height: 100vh;
-  /* Altura da viewport */
-  width: 30vw;
-  /* Largura da viewport */
-  
+
+.contato {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
 }
-.p_form{
+
+#localizer1 {
+  width: 70%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#localizer2 {
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+.p_form {
   color: white;
 }
-.titulo_contato{
+
+.titulo_contato {
   color: white;
 }
-input{
+
+input, textarea {
   background-color: transparent;
   color: #9ED99E;
 }
-textarea{
-  background-color: transparent;
-  width: 500px;
+
+textarea {
+  width: 100%;
+  max-width: 500px;
   height: 200px;
-  color: #9ED99E;
 }
+
+.btn {
+  margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+  #localizer1 {
+      width: 80%;
+  }
+  
+  #localizer2 {
+      width: 20%;
+  }
+}
+
+@media (max-width: 992px) {
+  .contato {
+      flex-direction: column;
+  }
+
+  #localizer1 {
+      width: 100%;
+  }
+
+  #localizer2 {
+      width: 100%;
+      margin-top: 20px;
+      position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo_contato {
+      font-size: 1.5rem;
+  }
+
+  .p_form {
+      font-size: 0.875rem;
+  }
+
+  textarea {
+      height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .titulo_contato {
+      font-size: 1.25rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+      font-size: 0.875rem;
+  }
+
+  .btn {
+      width: 100%;
+  }
+}
+

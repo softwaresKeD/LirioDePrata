@@ -7,6 +7,7 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Home from './pages/Home/Home';
 import Cardapio from './pages/Cardapio/Cardapio';
+import Contato from './components/Contato/Contato';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
-
+      <Contato />
       <Footer />
     </div>
   );
