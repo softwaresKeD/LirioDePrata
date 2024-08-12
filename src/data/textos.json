@@ -1,0 +1,14 @@
+{
+    "sobre_nos": [
+        {
+            "titulo": "Sobre nós",
+            "subtitulo": "Bem-vindo à Padaria Lírio de Prata!",
+            "texto": "Desde nossa fundação, nos dedicamos a oferecer produtos de alta qualidade e um serviço excepcional para todos os nossos clientes. Na Lírio de Prata, acreditamos que cada pedaço de pão e cada doce devem ser feitos com amor e dedicação."
+        },
+        {
+            "titulo": "Nossa Qualidade",
+            "subtitulo": "Nós nos orgulhamos da qualidade de nossos produtos.",
+            "texto": "Utilizamos ingredientes frescos e selecionados, garantindo que cada item em nossa padaria seja feito com o mais alto padrão de qualidade. Nossa equipe de padeiros e confeiteiros é apaixonada pelo que faz, e isso se reflete em cada produto que sai do nosso forno."
+        }
+    ]
+}
