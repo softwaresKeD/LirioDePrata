@@ -47,42 +47,31 @@ function Contato() {
     return (
         <div className="ctt">
             <div className="contato">
-                <div id="localizer1">
+                <div id="formulario-contato">
                     <h1 className="titulo_contato">Faça uma encomenda conosco.</h1>
                     <p className="p_form">Pães, bolos e sobremesas deliciosas disponíveis para você a todo momento do dia. Solicite um orçamento:</p>
                     <div className="form-container">
                         <form onSubmit={handleSubmit}>
                             <fieldset>
                                 <div className="form-group">
-                                    <input type="text" id="nome" name="nome" className="form-control" placeholder="Digite seu nome" value={formData.nome} onChange={handleChange} required />
+                                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" value={formData.nome} onChange={handleChange} required />
                                 </div>
                                 <div className="form-group">
-                                    <input className='form-control' type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" value={formData.telefone} onChange={handleChange} required />
+                                    <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" value={formData.telefone} onChange={handleChange} required />
                                 </div>
                                 <div className="form-group">
-                                    <input type="email" id="email" name="email" className="form-control" placeholder="Digite seu e-mail" value={formData.email} onChange={handleChange} required />
+                                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" value={formData.email} onChange={handleChange} required />
                                 </div>
-                                <div className="form-checkbox-group">
-                                    <label className="p_form">O que deseja?</label>
-                                    <div>
-                                        <label><input type="checkbox" name="desejo" value="sobremesa" onChange={handleChange} /> Sobremesa</label>
-                                    </div>
-                                    <div>
-                                        <label><input type="checkbox" name="desejo" value="bolo" onChange={handleChange} /> Bolo</label>
-                                    </div>
-                                    <div>
-                                        <label><input type="checkbox" name="desejo" value="pao" onChange={handleChange} /> Pão</label>
-                                    </div>
-                                </div>
+                                
                                 <div className="form-group">
-                                    <textarea id="pedido" name="pedido" className="form-control" rows="4" placeholder="Nos diga com detalhes o que deseja pedir" value={formData.pedido} onChange={handleChange} required></textarea>
+                                    <textarea id="pedido" name="pedido" rows="4" placeholder="Nos diga com detalhes o que deseja pedir" value={formData.pedido} onChange={handleChange} required></textarea>
                                 </div>
                                 <button type="submit" className="btn btn-primary">Enviar</button>
                             </fieldset>
                         </form>
                     </div>
                 </div>
-                <div id="localizer2">
+                <div id="info-contato">
                     <div className="dados_ctt">
                         <h2 className="titulo_contato">Contato</h2>
                         <h4 className="titulo_contato">Telefone : 1234567789</h4>
