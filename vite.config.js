@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: process.env.NODE_ENV === 'production' ? '/padarias/' : '/padarias/',
 
+
   publicDir: 'public',
   build: {
     outDir: 'dist', // Definindo o diretório de saída para dist
