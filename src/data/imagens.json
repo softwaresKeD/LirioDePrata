@@ -1,19 +1,19 @@
 {
     "home_superior": [
         {
-            "src": "assets/imagens/home1.jpg",
+            "src": "/padarias/assets/imagens/home1.jpg",
             "alt": "First slide",
             "label": "Ambiente Aconchegante",
             "text": "Desfrute de um ambiente acolhedor e confortável enquanto saboreia nossos deliciosos produtos."
         },
         {
-            "src": "assets/imagens/home2.jpg",
+            "src": "/padarias/assets/imagens/home2.jpg",
             "alt": "First slide",
             "label": "Produtos de Qualidade",
             "text": "Nossa padaria é reconhecida pela qualidade e frescor de nossos produtos, preparados com os melhores ingredientes."
         },
         {
-            "src": "assets/imagens/home3.jpg",
+            "src": "/padarias/assets/imagens/home3.jpg",
             "alt": "First slide",
             "label": "Atendimento Excepcional",
             "text": "Nosso compromisso é proporcionar um atendimento caloroso e personalizado para cada cliente."
@@ -21,25 +21,25 @@
     ],
     "cardapio_superior": [
         {
-            "src": "assets/imagens/Cardapio1.jpg",
+            "src": "/padarias/assets/imagens/Cardapio1.jpg",
             "alt": "First slide",
             "label": "MELHORES ASSADOS",
             "text": ""
         },
         {
-            "src": "assets/imagens/Cardapio2.jpg",
+            "src": "/padarias/assets/imagens/Cardapio2.jpg",
             "alt": "First slide",
             "label": "DOCES DELICIOSOS",
             "text": ""
         },
         {
-            "src": "assets/imagens/Cardapio3.jpg",
+            "src": "/padarias/assets/imagens/Cardapio3.jpg",
             "alt": "First slide",
             "label": "DIVERSOS SALGADOS",
             "text": ""
         },
         {
-            "src": "assets/imagens/Cardapio4.jpg",
+            "src": "/padarias/assets/imagens/Cardapio4.jpg",
             "alt": "First slide",
             "label": "MELHORES BOLOS",
             "text": ""
