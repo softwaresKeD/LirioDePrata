@@ -15,7 +15,7 @@ function App() {
       <Header />
       <div className='main-content'>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/home" element={<Home />} />
           <Route path="/cardapio" element={<Cardapio />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

@@ -48,10 +48,10 @@ function Header() {
                 </Button>
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
                     <Nav>
-                        <Link to="/" onClick={() => scrollToSection('contato')} className="nav-link">HOME</Link>
-                        <Link to="/" onClick={() => scrollToSection('contato')} className="nav-link">SOBRE</Link>
+                        <Link to="/home" className="nav-link">HOME</Link>
+                        <Link to="/home" className="nav-link">SOBRE</Link>
                         <Link to="/cardapio" className="nav-link">CARDÁPIO</Link>
-                        <Link to="/" onClick={() => scrollToSection('contato')} className="nav-link">CONTATO</Link>
+                        <Link to="/home" className="nav-link">CONTATO</Link>
                     </Nav>
                 </Navbar.Collapse>
                 <div className="ghost-div" />
@@ -60,10 +60,10 @@ function Header() {
             <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
                 <Button className="close-btn" onClick={toggleSidebar}>×</Button>
                 <Nav className="flex-column">
-                    <Link to="/" onClick={() => scrollToSection('contato')} className="nav-link">HOME</Link>
-                    <Link to="/" onClick={() => scrollToSection('contato')} className="nav-link">SOBRE</Link>
+                    <Link to="/home" className="nav-link">HOME</Link>
+                    <Link to="/home" className="nav-link">SOBRE</Link>
                     <Link to="/cardapio" className="nav-link">CARDÁPIO</Link>
-                    <Link to="/" onClick={() => scrollToSection('contato')} className="nav-link">CONTATO</Link>
+                    <Link to="/home" className="nav-link">CONTATO</Link>
                 </Nav>
             </div>
         </header>
