@@ -4,55 +4,55 @@
         "titulo": "Pão de Alho",
         "descricao": "Pão de alho recheado com queijo e ervas.",
         "preco": 12,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Frango Assado",
         "descricao": "Frango assado temperado com ervas finas.",
         "preco": 25,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Costela ao Forno",
         "descricao": "Costela suína assada com molho barbecue.",
         "preco": 30,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Batata Assada",
         "descricao": "Batata recheada com bacon e queijo cheddar.",
         "preco": 15,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Legumes Grelhados",
         "descricao": "Mix de legumes grelhados com azeite e alho.",
         "preco": 18,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Picanha no Forno",
         "descricao": "Picanha assada com manteiga de ervas.",
         "preco": 45,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Peixe Assado",
         "descricao": "Peixe temperado e assado com limão e ervas.",
         "preco": 28,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Cordeiro Assado",
         "descricao": "Cordeiro assado com alecrim e alho.",
         "preco": 55,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Queijo Coalho",
         "descricao": "Queijo coalho assado na brasa.",
         "preco": 10,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       }
     ],
     "Doces": [
@@ -60,55 +60,55 @@
         "titulo": "Bolo de Chocolate",
         "descricao": "Bolo de chocolate com cobertura de brigadeiro.",
         "preco": 20,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Torta de Limão",
         "descricao": "Torta de limão com base crocante e merengue.",
         "preco": 22,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Pudim de Leite",
         "descricao": "Pudim de leite condensado com caramelo.",
         "preco": 15,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Cheesecake",
         "descricao": "Cheesecake com calda de frutas vermelhas.",
         "preco": 25,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Brigadeiro Gourmet",
         "descricao": "Brigadeiro gourmet com granulado belga.",
         "preco": 5,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Churros",
         "descricao": "Churros recheados com doce de leite.",
         "preco": 8,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Mousse de Maracujá",
         "descricao": "Mousse de maracujá com calda de maracujá.",
         "preco": 18,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Torta Holandesa",
         "descricao": "Torta holandesa com base de biscoito e creme.",
         "preco": 28,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Cocada",
         "descricao": "Cocada de coco queimado.Cocada de coco queimado.Cocada de coco queimado.",
         "preco": 12,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       }
     ],
     "Salgados": [
@@ -116,55 +116,55 @@
         "titulo": "Coxinha",
         "descricao": "Coxinha de frango com catupiry.",
         "preco": 7,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Esfiha",
         "descricao": "Esfiha de carne com tempero especial.",
         "preco": 5,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Kibe",
         "descricao": "Kibe frito recheado com carne.",
         "preco": 6,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Pastel",
         "descricao": "Pastel de queijo com orégano.",
         "preco": 8,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Empada",
         "descricao": "Empada de camarão com catupiry.",
         "preco": 10,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Enroladinho de Salsicha",
         "descricao": "Enroladinho de salsicha com massa folhada.",
         "preco": 4,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Bolinha de Queijo",
         "descricao": "Bolinha de queijo empanada.",
         "preco": 5,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Risole",
         "descricao": "Risole de presunto e queijo.",
         "preco": 6,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Croquete",
         "descricao": "Croquete de carne com molho especial.",
         "preco": 7,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       }
     ],
     "Bolos": [
@@ -172,55 +172,55 @@
         "titulo": "Bolo Red Velvet",
         "descricao": "Bolo Red Velvet com cream cheese.",
         "preco": 35,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Bolo de Cenoura",
         "descricao": "Bolo de cenoura com cobertura de chocolate.",
         "preco": 20,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Bolo de Fubá",
         "descricao": "Bolo de fubá com erva-doce.",
         "preco": 18,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Bolo de Milho",
         "descricao": "Bolo de milho com coco ralado.",
         "preco": 22,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Bolo de Laranja",
         "descricao": "Bolo de laranja com calda de laranja.",
         "preco": 25,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Bolo de Maçã",
         "descricao": "Bolo de maçã com canela.",
         "preco": 24,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Bolo de Coco",
         "descricao": "Bolo de coco com recheio de doce de leite.",
         "preco": 28,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Bolo de Abacaxi",
         "descricao": "Bolo de abacaxi com recheio de chantilly.",
         "preco": 30,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       },
       {
         "titulo": "Bolo de Maracujá",
         "descricao": "Bolo de maracujá com cobertura de maracujá.",
         "preco": 32,
-        "imagem": "./padarias/assets/imagens/Cardapio1.jpg"
+        "imagem": "./assets/imagens/Cardapio1.jpg"
       }
     ]
   }

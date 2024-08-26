@@ -1,45 +1,45 @@
 {
     "home_superior": [
         {
-            "src": "/padarias/assets/imagens/home1.jpg",
+            "src": "./assets/imagens/home1.jpg",
             "alt": "First slide",
             "label": "Ambiente Aconchegante",
             "text": "Desfrute de um ambiente acolhedor e confortável enquanto saboreia nossos deliciosos produtos."
         },
         {
-            "src": "/padarias/assets/imagens/home2.jpg",
-            "alt": "First slide",
+            "src": "./assets/imagens/home2.jpg",
+            "alt": "Second slide",
             "label": "Produtos de Qualidade",
             "text": "Nossa padaria é reconhecida pela qualidade e frescor de nossos produtos, preparados com os melhores ingredientes."
         },
         {
-            "src": "/padarias/assets/imagens/home3.jpg",
-            "alt": "First slide",
+            "src": "./assets/imagens/home3.jpg",
+            "alt": "Third slide",
             "label": "Atendimento Excepcional",
             "text": "Nosso compromisso é proporcionar um atendimento caloroso e personalizado para cada cliente."
         }
     ],
     "cardapio_superior": [
         {
-            "src": "/padarias/assets/imagens/Cardapio1.jpg",
+            "src": "./assets/imagens/Cardapio1.jpg",
             "alt": "First slide",
             "label": "MELHORES ASSADOS",
             "text": ""
         },
         {
-            "src": "/padarias/assets/imagens/Cardapio2.jpg",
+            "src": "./assets/imagens/Cardapio2.jpg",
             "alt": "First slide",
             "label": "DOCES DELICIOSOS",
             "text": ""
         },
         {
-            "src": "/padarias/assets/imagens/Cardapio3.jpg",
+            "src": "./assets/imagens/Cardapio3.jpg",
             "alt": "First slide",
             "label": "DIVERSOS SALGADOS",
             "text": ""
         },
         {
-            "src": "/padarias/assets/imagens/Cardapio4.jpg",
+            "src": "./assets/imagens/Cardapio4.jpg",
             "alt": "First slide",
             "label": "MELHORES BOLOS",
             "text": ""
