@@ -1,10 +1,9 @@
 import React from 'react';
-import { Route, Routes, Navigate  } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 
-import './index.css'
-
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
+import './index.css';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import Cardapio from './pages/Cardapio/Cardapio';
 import Contato from './components/Contato/Contato';
@@ -15,9 +14,9 @@ function App() {
       <Header />
       <div className='main-content'>
         <Routes>
-          <Route exact path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/cardapio" element={<Cardapio />} />
-          <Route path="*" element={<Navigate to="/home" />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
       <Contato />
