@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route exact path="/home" element={<Home />} />
           <Route path="/cardapio" element={<Cardapio />} />
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="*" element={<Navigate to="/home" />} />
         </Routes>
       </div>
       <Contato />
